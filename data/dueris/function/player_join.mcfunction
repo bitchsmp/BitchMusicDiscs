@@ -10,5 +10,9 @@ scoreboard players set @s dueris.leaves 0
 # Example: Display a welcome message to the joining player
 tellraw @s [{"text":"Welcome to the server, ","color":"gray"},{"selector":"@s","color":"yellow"},{"text":"!","color":"gray"}]
 recipe give @s *
-recipe take @s dueris:cocaine
-recipe take @s dueris:methamphetamine
+recipe take @s[name=!Pete] dueris:cocaine
+recipe take @s[name=!Pete] dueris:methamphetamine
+recipe take @s[name=!Pete] dueris:methamphetamine_enhanced
+recipe take @s[name=!Pete] dueris:methamphetamine_pure
+
+
