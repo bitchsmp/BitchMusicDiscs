@@ -15,4 +15,5 @@ recipe take @s[name=!Pete] dueris:methamphetamine
 recipe take @s[name=!Pete] dueris:methamphetamine_enhanced
 recipe take @s[name=!Pete] dueris:methamphetamine_pure
 
-
+recipe take @s[name=!Minus_0] dueris:tome_of_darkness
+recipe take @s[name=!Minus_0] dueris:tome_of_must_have_been_the_wind
