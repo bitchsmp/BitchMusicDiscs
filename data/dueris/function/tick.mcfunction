@@ -8,7 +8,7 @@ execute as @a[scores={dueris.leaves=1..}] run function dueris:player_join
 
 
 # Greatbow Tick Loop
-execute as @e[type=arrow,tag=dueris.greatbow] at @s run particle minecraft:witch ~ ~ ~ 0 0 0 0 1 force
-execute as @e[type=arrow,tag=dueris.greatbow] at @s run data modify entity @s crit set value false
-execute as @e[type=arrow,tag=dueris.greatbow] at @s if entity @s[nbt={inGround:1b}] run function dueris:greatbow
-execute as @e[type=arrow,tag=dueris.greatbow_weak] at @s run data modify entity @s damage set value 3
+execute as @e[tag=dueris.greatbow,type=#arrows] at @s run function dueris:greatbow
+execute as @e[tag=dueris.greatbow,type=#arrows] at @s if entity @s[nbt={inGround:1b}] run function dueris:greatbow_land
+execute as @e[tag=dueris.greatbow_weak,type=#arrows] at @s run data modify entity @s damage set value 3
+execute as @e[tag=dueris.greatbow,type=#arrows] at @s run data modify entity @s damage set value 7
